@@ -8,17 +8,20 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:padding="2dp"
         android:text="default text" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="hint text displaied when text is empty"
+        android:padding="2dp"
         android:singleLine="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:padding="2dp"
         android:text="bold text, color is #aaff0000, font size is 16sp"
         android:textColor="#aaff0000"
         android:textSize="16sp"
@@ -27,6 +30,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:padding="2dp"
         android:text="italic text, color is #8800ff00, font size is 16sp"
         android:textColor="#8800ff00"
         android:textSize="16sp"
@@ -35,6 +39,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:padding="2dp"
         android:text="bold and italic text, color is #880000ff, font size is 16sp"
         android:textColor="#880000ff"
         android:textSize="16sp"
@@ -43,6 +48,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:padding="2dp"
         android:singleLine="true"
         android:text="single line text, the over edge part of a long text will not display " />
 
@@ -53,26 +59,48 @@
         android:focusable="true"
         android:focusableInTouchMode="true"
         android:marqueeRepeatLimit="marquee_forever"
+        android:padding="2dp"
         android:singleLine="true"
         android:text="marquee text, touch me and text will show marquee animation if text too long" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="custome font, color is #8800ff00, font size is 16sp"
-        android:textAlignment="viewStart" />
+        android:padding="2dp"
+        android:text="scaled text, scale value is 1.5"
+        android:textScaleX="1.5" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#ffffff"
+        android:padding="2dp"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:text="scaled text view, scale value is 1.5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffff0000"
+        android:padding="2dp"
+        android:shadowColor="#ff000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="3"
+        android:text="shadow text"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:focusable="true"
-        android:selectAllOnFocus="true"
+        android:padding="2dp"
         android:singleLine="true"
-        android:text="Highlight text"
+        android:text="highlight text, long click me to select text"
         android:textColor="#ff0000"
-        android:editable="true"
-        android:clickable="true"
-        android:textColorHighlight="#00ff00" />
+        android:textColorHighlight="#00ff00"
+        android:textIsSelectable="true"
+        android:textSize="15sp" />
 
 </LinearLayout>

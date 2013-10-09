@@ -21,21 +21,35 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".library.view.SeekBar1" android:label="library/view/SeekBar">
+        <activity android:name=".library.view.SeekBar1" android:label="Library/View/SeekBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="com.swordy.demo.SIMPLE_CODE" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.Text1" android:label="view/normal text">
+        <activity android:name=".view.Text1" android:label="View/Text/Normal">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="com.swordy.demo.SIMPLE_CODE" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.Text2" android:label="view/styled text">
+        <activity android:name=".view.Text2" android:label="View/Text/Linkify">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.swordy.demo.SIMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".view.Button1" android:label="View/Button">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.swordy.demo.SIMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ndk.HelloJNI" android:label="NDK/HelloJNI">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
