@@ -56,6 +56,13 @@
                 <category android:name="com.swordy.demo.SIMPLE_CODE" />
             </intent-filter>
         </activity>
+        <activity android:name=".widget.ListView1" android:label="Widget/ListView/ListActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.swordy.demo.SIMPLE_CODE" />
+            </intent-filter>
+        </activity>
         <activity android:name=".ndk.HelloJNI" android:label="NDK/HelloJNI">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
