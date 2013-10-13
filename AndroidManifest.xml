@@ -49,6 +49,13 @@
                 <category android:name="com.swordy.demo.SIMPLE_CODE" />
             </intent-filter>
         </activity>
+        <activity android:name=".view.ImageView1" android:label="View/ImageView">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.swordy.demo.SIMPLE_CODE" />
+            </intent-filter>
+        </activity>
         <activity android:name=".ndk.HelloJNI" android:label="NDK/HelloJNI">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
