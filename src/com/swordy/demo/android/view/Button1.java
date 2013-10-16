@@ -7,7 +7,6 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.swordy.demo.android.R;
-import com.swordy.library.android.widget.Alert;
 
 public class Button1 extends Activity {
 	private Toast mToast;
@@ -21,7 +20,7 @@ public class Button1 extends Activity {
 	
 	public void onButtonClicked(View v){
 		if(mToast == null){
-			mToast = Toast.makeText(this, ((Button)v).getText().toString(), Alert.LENGTH_SHORT);
+			mToast = Toast.makeText(this, ((Button)v).getText().toString(), Toast.LENGTH_SHORT);
 		}else{
 			mToast.setText(((Button)v).getText().toString());
 		}
