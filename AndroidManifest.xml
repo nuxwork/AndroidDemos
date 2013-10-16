@@ -21,49 +21,100 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".library.view.SeekBar1" android:label="Library/View/SeekBar">
+        <activity
+            android:name=".library.view.SeekBar1"
+            android:label="Library/View/SeekBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="com.swordy.demo.SIMPLE_CODE" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.Text1" android:label="View/Text/Normal">
+        <activity
+            android:name=".view.Text1"
+            android:label="View/Text/Normal" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="com.swordy.demo.SIMPLE_CODE" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.Text2" android:label="View/Text/Linkify">
+        <activity
+            android:name=".view.Text2"
+            android:label="View/Text/Linkify" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="com.swordy.demo.SIMPLE_CODE" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.Button1" android:label="View/Button">
+        <activity
+            android:name=".view.Button1"
+            android:label="View/Button" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="com.swordy.demo.SIMPLE_CODE" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.ImageView1" android:label="View/ImageView">
+        <activity
+            android:name=".view.ImageView1"
+            android:label="View/ImageView" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="com.swordy.demo.SIMPLE_CODE" />
             </intent-filter>
         </activity>
-        <activity android:name=".widget.ListView1" android:label="Widget/ListView/ListActivity">
+		        <activity android:name=".view.DragAndDrop1" android:label="View/DragAndDrop">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="com.swordy.demo.SIMPLE_CODE" />
             </intent-filter>
         </activity>
-        <activity android:name=".ndk.HelloJNI" android:label="NDK/HelloJNI">
+        <activity
+            android:name=".view.ImageButton1"
+            android:label="View/ImageButton" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.swordy.demo.SIMPLE_CODE" />
+            </intent-filter>
+        </activity>
+		        <activity android:name=".animation.Animation1" android:label="Animation/AnimationDrawable">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.swordy.demo.SIMPLE_CODE" />
+            </intent-filter>
+        </activity>
+		        <activity android:name=".widget.GridView1" android:label="Widget/GridView(normal)">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.swordy.demo.SIMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".widget.GridView2" android:label="Widget/GridView(optimize)">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.swordy.demo.SIMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".widget.ListView1"
+            android:label="Widget/ListView/ListActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.swordy.demo.SIMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ndk.HelloJNI"
+            android:label="NDK/HelloJNI" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
