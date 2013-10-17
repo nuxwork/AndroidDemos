@@ -1,4 +1,4 @@
-package com.swordy.demo.android;
+package com.swordy.demo.android.app;
 
 import java.text.Collator;
 import java.util.ArrayList;
@@ -7,6 +7,8 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import com.swordy.demo.android.global.Values;
 
 
 import android.app.ListActivity;

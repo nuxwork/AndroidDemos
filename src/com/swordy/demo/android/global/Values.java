@@ -1,4 +1,4 @@
-package com.swordy.demo.android;
+package com.swordy.demo.android.global;
 
 public class Values{
 	public static final String CATEGORY_SAMPLE_CODE = "com.swordy.demo.SIMPLE_CODE";
