@@ -129,6 +129,17 @@
                 <category android:name="com.swordy.demo.SIMPLE_CODE" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".app.Service1"
+            android:label="Service/Service1" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.swordy.demo.SIMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <service android:name=".app.Service1$MyService1">
+        </service>
     </application>
 
 </manifest>
