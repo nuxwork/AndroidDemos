@@ -17,8 +17,6 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AbsListView;
-import android.widget.AbsListView.OnScrollListener;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
@@ -28,7 +26,7 @@ import com.swordy.demo.android.R;
 import com.swordy.demo.android.app.ThisApplication;
 
 public class GridView2 extends Activity {
-	private static final String TAG = "GridView2";
+	private static final String TAG = GridView2.class.getSimpleName();
 
 	private GridView mGridPhoto;
 	private Toast mToast = Toast.makeText(ThisApplication.getInstance(), "", Toast.LENGTH_LONG);

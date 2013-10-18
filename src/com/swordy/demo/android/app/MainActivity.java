@@ -8,6 +8,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import com.swordy.demo.android.animation.Animation1;
 import com.swordy.demo.android.global.Values;
 
 
@@ -21,6 +22,8 @@ import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
 public class MainActivity extends ListActivity {
+
+	private static final String TAG = MainActivity.class.getSimpleName();
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

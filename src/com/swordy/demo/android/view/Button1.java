@@ -9,6 +9,8 @@ import android.widget.Toast;
 import com.swordy.demo.android.R;
 
 public class Button1 extends Activity {
+    private static final String TAG = Button1.class.getSimpleName();
+    
 	private Toast mToast;
 
 	@Override

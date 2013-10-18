@@ -21,7 +21,7 @@ import com.swordy.demo.android.R;
 @SuppressLint("NewApi")
 public class DragAndDrop1 extends Activity
 {
-    private static final String TAG = "DragAndDrop1";
+    private static final String TAG = DragAndDrop1.class.getSimpleName();
     
     private ImageView mImgMic;
     

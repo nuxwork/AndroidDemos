@@ -8,10 +8,12 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.swordy.demo.android.R;
+import com.swordy.demo.android.widget.GridView3;
 
 public class Animation1 extends Activity
 {
-    
+	private static final String TAG = Animation1.class.getSimpleName();
+	
     private ImageView mImgSpeechWave;
     
     private AnimationDrawable mAnimSpeechWave;

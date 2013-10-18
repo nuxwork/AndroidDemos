@@ -7,6 +7,8 @@ import com.swordy.demo.android.R;
 
 public class ImageButton1 extends Activity{
 
+    private static final String TAG = ImageButton1.class.getSimpleName();
+    
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
