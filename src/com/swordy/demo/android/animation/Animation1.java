@@ -24,7 +24,7 @@ public class Animation1 extends Activity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.animation1);
         
-        mImgSpeechWave = (ImageView)findViewById(R.id.animation1_imgSpeechWave);
+        mImgSpeechWave = (ImageView)findViewById(R.id.imageView1);
         mImgSpeechWave.setBackgroundResource(R.anim.animation1_drawable_list);
         mAnimSpeechWave = (AnimationDrawable)mImgSpeechWave.getBackground();
     }

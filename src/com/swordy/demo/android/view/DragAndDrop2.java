@@ -42,8 +42,8 @@ public class DragAndDrop2 extends Activity
         
         mToast = Toast.makeText(this, "", Toast.LENGTH_LONG);
         
-        mLayContainer = (LinearLayout)findViewById(R.id.drag_layContainer);
-        mImgMic = (ImageView)findViewById(R.id.drag_imgMic);
+        mLayContainer = (LinearLayout)findViewById(R.id.layout2);
+        mImgMic = (ImageView)findViewById(R.id.imageView1);
         
         mImgMic.setOnLongClickListener(new OnLongClickListener()
         {

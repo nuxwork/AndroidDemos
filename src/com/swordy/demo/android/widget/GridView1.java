@@ -41,7 +41,7 @@ public class GridView1 extends Activity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.gridview1);
         
-        mGridPhoto = (GridView)findViewById(R.id.gridview1_gridPhoto);
+        mGridPhoto = (GridView)findViewById(R.id.gridView1);
         
         ImageAdapter adapter = new ImageAdapter(this, getPaths());
         

@@ -36,7 +36,7 @@ public class GridView2 extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.gridview1);
 
-		mGridPhoto = (GridView) findViewById(R.id.gridview1_gridPhoto);
+		mGridPhoto = (GridView) findViewById(R.id.gridView1);
 
 		ImageAdapter adapter = new ImageAdapter(this, getPaths());
 
@@ -130,7 +130,7 @@ public class GridView2 extends Activity {
 				holder = new ViewHolder();
 				convertView = mInflater.inflate(R.layout.gridview2_grid_item, null);
 				holder.preview = (ImageView) convertView
-						.findViewById(R.id.gridview2_grid_item_imgPreview);
+						.findViewById(R.id.imageView1);
 				convertView.setTag(holder);
 			} else {
 				holder = (ViewHolder) convertView.getTag();
