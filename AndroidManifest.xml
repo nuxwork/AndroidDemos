@@ -135,6 +135,15 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".widget.VideoView1"
+            android:label="Widget/VideoView" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.swordy.demo.SIMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".widget.ListView1"
             android:label="Widget/ListView/ListActivity" >
             <intent-filter>
@@ -155,6 +164,15 @@
         <activity
             android:name=".media.MediaPlayer1"
             android:label="Media/MediaPlayer" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.swordy.demo.SIMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".task.Thread1"
+            android:label="Task/Thread" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
