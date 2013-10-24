@@ -180,6 +180,15 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".task.Thread2"
+            android:label="Task/LooperThread" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.swordy.demo.SIMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".library.view.SeekBar1"
             android:label="Library/View/SeekBar" >
             <intent-filter>
