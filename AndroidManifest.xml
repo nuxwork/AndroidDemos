@@ -32,6 +32,15 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".library.widget.RegionTouch1"
+            android:label="Library/Widget/RegionTouch" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.swordy.demo.SIMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".view.Text1"
             android:label="View/Text/Normal" >
             <intent-filter>
