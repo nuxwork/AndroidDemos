@@ -37,6 +37,28 @@ public class Thread1 extends Activity
         mThread.start();
     }
     
+    @Override
+    protected void onResume()
+    {
+        if (mState == STATE_PAUSED)
+            mState = STATE_STARTED;
+        super.onResume();
+    }
+    
+    @Override
+    protected void onPause()
+    {
+        mState = STATE_PAUSED;
+        super.onPause();
+    }
+    
+    @Override
+    protected void onDestroy()
+    {
+        mState = STATE_STOPED;
+        super.onDestroy();
+    }
+    
     public void onViewClicked(View v)
     {
         switch (v.getId())
@@ -53,8 +75,9 @@ public class Thread1 extends Activity
         }
     }
     
-    private Handler mHandler = new Handler(){
-
+    private Handler mHandler = new Handler()
+    {
+        
         @Override
         public void handleMessage(Message msg)
         {
@@ -71,20 +94,21 @@ public class Thread1 extends Activity
         {
             while (mState != STATE_STOPED)
             {
+                if (mState == STATE_PAUSED)
+                    continue;
+                
+                mNumber++;
+                mHandler.sendEmptyMessage(0);
+                
+                // sleep must behind the real task
                 try
                 {
                     Thread.sleep(500);
                 }
                 catch (InterruptedException e)
                 {
-                    // TODO Auto-generated catch block
                     e.printStackTrace();
                 }
-                if(mState == STATE_PAUSED)
-                    continue;
-                
-                mNumber++;
-                mHandler.sendEmptyMessage(0);
             }
         }
         
