@@ -113,6 +113,7 @@ public class Thread2 extends Activity
                 
                 mNumber++;
                 mHandler.sendEmptyMessage(0);
+                Looper.loop();
                 mToast.setText("数字" + mNumber);
                 Log.v(TAG, "log 数字 " + mNumber);
                 mToast.show();
@@ -126,7 +127,6 @@ public class Thread2 extends Activity
                     e.printStackTrace();
                 }
             }
-            Looper.loop();
             mHandler.getLooper().quit();
         }
         

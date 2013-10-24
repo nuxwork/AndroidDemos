@@ -136,6 +136,15 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".widget.GridView3"
+            android:label="Widget/GridView(optimized by options)" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.swordy.demo.SIMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".widget.VideoView1"
             android:label="Widget/VideoView" >
             <intent-filter>

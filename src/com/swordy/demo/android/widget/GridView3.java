@@ -13,6 +13,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.provider.MediaStore;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -74,7 +75,7 @@ public class GridView3 extends Activity {
 
 		private LayoutInflater mInflater;
 
-		private int mCacheSize = 80;
+		private int mCacheSize = 150;
 
 		private Bitmap[] mBitmaps;
 
@@ -108,15 +109,14 @@ public class GridView3 extends Activity {
 			if (convertView == null) {
 				holder = new ViewHolder();
 				convertView = mInflater.inflate(R.layout.gridview2_grid_item, null);
-				holder.preview = (ImageView) convertView
-						.findViewById(R.id.imageView1);
+				holder.preview = (ImageView) convertView.findViewById(R.id.imageView1);
 				convertView.setTag(holder);
 			} else {
 				holder = (ViewHolder) convertView.getTag();
 			}
-			Bitmap bitmap = mBitmaps[position % mCacheSize];
 			// if(bitmap == null)
 			// notifyDataSetChanged();
+			Bitmap bitmap = mBitmaps[position % mCacheSize];
 			holder.previewData = bitmap;
 			holder.preview.setImageBitmap(holder.previewData);
 			return convertView;
@@ -131,9 +131,13 @@ public class GridView3 extends Activity {
 
 			@Override
 			public void run() {
+				BitmapFactory.Options opts = new BitmapFactory.Options();
+				DisplayMetrics dm = getResources().getDisplayMetrics();
+				opts.inDensity = dm.densityDpi;
+				opts.inPreferredConfig = Bitmap.Config.RGB_565;
 				for (int i = 0; i != mCacheSize; i++) {
-					mBitmaps[i] = BitmapFactory.decodeFile(mPaths.get(i));
-					if (i % 3 == 0)
+					mBitmaps[i] = BitmapFactory.decodeFile(mPaths.get(i), opts);
+//					if (i % 3 == 0)
 						mHandler.sendEmptyMessage(0);
 				}
 			}
