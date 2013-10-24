@@ -23,23 +23,18 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".library.view.SeekBar1"
-            android:label="Library/View/SeekBar" >
+            android:name=".app.Service1"
+            android:label="Service/Service1" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="com.swordy.demo.SIMPLE_CODE" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".library.widget.RegionTouch1"
-            android:label="Library/Widget/RegionTouch" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="com.swordy.demo.SIMPLE_CODE" />
-            </intent-filter>
-        </activity>
+        <service android:name=".app.Service1$MyService1" >
+        </service>
+
         <activity
             android:name=".view.Text1"
             android:label="View/Text/Normal" >
@@ -150,7 +145,7 @@
         </activity>
         <activity
             android:name=".data.SharedPreference1"
-            android:label="data/SharedPreference1" >
+            android:label="Data/SharedPreference1" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -158,17 +153,32 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".app.Service1"
-            android:label="Service/Service1" >
+            android:name=".media.MediaPlayer1"
+            android:label="Media/MediaPlayer" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="com.swordy.demo.SIMPLE_CODE" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".library.view.SeekBar1"
+            android:label="Library/View/SeekBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-        <service android:name=".app.Service1$MyService1" >
-        </service>
+                <category android:name="com.swordy.demo.SIMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".library.widget.RegionTouch1"
+            android:label="Library/Widget/RegionTouch" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.swordy.demo.SIMPLE_CODE" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
