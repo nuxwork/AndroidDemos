@@ -16,7 +16,7 @@ public class Text2 extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.text2);
 
-		TextView txv1 = (TextView) findViewById(R.id.textview1);
+		TextView txv1 = (TextView) findViewById(R.id.textView1);
 		txv1.setText(Html.fromHtml("<u>使用html实现下划线样式</u>"));
 	}
 
