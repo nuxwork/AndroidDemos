@@ -8,10 +8,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.swordy.demo.android.animation.Animation1;
-import com.swordy.demo.android.global.Values;
-
-
 import android.app.ListActivity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -20,6 +16,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
+
+import com.swordy.demo.android.global.Values;
 
 public class MainActivity extends ListActivity {
 
@@ -45,8 +43,7 @@ public class MainActivity extends ListActivity {
     protected List<Map<String, Object>> getData(String prefix) {
         List<Map<String, Object>> myData = new ArrayList<Map<String, Object>>();
 
-        Intent mainIntent = new Intent(Intent.ACTION_MAIN, null);
-        mainIntent.addCategory(Values.CATEGORY_SAMPLE_CODE);
+        Intent mainIntent = new Intent(Values.ACTION_SAMPLE_CODE, null);
 
         PackageManager pm = getPackageManager();
         List<ResolveInfo> list = pm.queryIntentActivities(mainIntent, 0);
