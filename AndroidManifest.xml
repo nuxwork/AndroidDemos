@@ -15,7 +15,7 @@
         android:theme="@style/AppTheme"
         android:label="@string/app_name" >
         <activity
-            android:name=".app.MainActivity"
+            android:name="com.swordy.demo.android.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,8 +24,17 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".app.AlertDialog1"
+            android:label="App/AlertDialog" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.swordy.demo.SIMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".app.Service1"
-            android:label="Service/Service1" >
+            android:label="App/Service" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -1,4 +1,4 @@
-package com.swordy.demo.android.app;
+package com.swordy.demo.android;
 
 import java.text.Collator;
 import java.util.ArrayList;
