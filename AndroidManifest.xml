@@ -118,6 +118,15 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".animation.Animation2"
+            android:label="Animation/Animations(from resources)" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.swordy.demo.SIMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".widget.GridView1"
             android:label="Widget/GridView" >
             <intent-filter>
