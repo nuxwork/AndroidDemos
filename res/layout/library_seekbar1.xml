@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp" >
+
+    <com.swordy.library.android.widget.SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="40dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        custom:max="100"
+        custom:orientation="vertical"
+        custom:progress="50"
+        custom:progressDrawable="@drawable/library_seekbar1_progress"
+        custom:progressHeight="5dp"
+        custom:thumb="@drawable/library_seekbar1_thumb_selector"
+        custom:thumbHeight="40dp"
+        custom:thumbOffset="20dp"
+        custom:thumbWidth="40dp" />
+
+    <com.swordy.library.android.widget.SeekBar
+        android:id="@+id/seekBar2"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        custom:max="100"
+        custom:orientation="horizontal"
+        custom:progress="50"
+        custom:progressDrawable="@drawable/library_seekbar1_progress"
+        custom:progressHeight="4dp"
+        custom:thumb="@drawable/library_seekbar1_thumb_selector"
+        custom:thumbOffset="20dp"/>
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 按下状态 -->
+    <item android:drawable="@drawable/library_seekbar1_thumb_pressed" android:state_pressed="true"/>
+
+    <!-- 普通无焦点状态 -->
+    <item android:drawable="@drawable/library_seekbar1_thumb_normal"/>
+
+</selector>
