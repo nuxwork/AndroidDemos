@@ -27,11 +27,11 @@ public class RegionTouch1 extends Activity
         setContentView(R.layout.library_regiontouch1);
         
         RegionTouch rt = (RegionTouch)findViewById(R.id.regionTouch1);
-        rt.setRegionMap(R.drawable.regiontouch1_keyboard_region, new int[] {COLOR_DIRETION_OK, COLOR_DIRETION_UP,
-            COLOR_DIRETION_DOWN, COLOR_DIRETION_LEFT, COLOR_DIRETION_RIGHT}, new int[] {
-            R.drawable.regiontouch1_keyboard_ok_pressed, R.drawable.regiontouch1_keyboard_up_pressed,
-            R.drawable.regiontouch1_keyboard_down_pressed, R.drawable.regiontouch1_keyboard_left_pressed,
-            R.drawable.regiontouch1_keyboard_right_pressed});
+//        rt.setRegionMap(R.drawable.regiontouch1_keyboard_region, new int[] {COLOR_DIRETION_OK, COLOR_DIRETION_UP,
+//            COLOR_DIRETION_DOWN, COLOR_DIRETION_LEFT, COLOR_DIRETION_RIGHT}, new int[] {
+//            R.drawable.regiontouch1_keyboard_ok_pressed, R.drawable.regiontouch1_keyboard_up_pressed,
+//            R.drawable.regiontouch1_keyboard_down_pressed, R.drawable.regiontouch1_keyboard_left_pressed,
+//            R.drawable.regiontouch1_keyboard_right_pressed});
     }
     
 }
