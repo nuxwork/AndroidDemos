@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="library_numberview1_bg_normal">#ff212228</color>
+    <color name="library_numberview1_bg_pressed">#ff2d7dfa</color>
+    <color name="library_numberview1_text_normal">#ff9b9fa5</color>
+    <color name="library_numberview1_text_pressed">#ffffffff</color>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <com.swordy.library.android.widget.NumberView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/library_numberview1_bg_selector"
+        custom:text="1"
+        custom:angle="20.0"
+        custom:textColor="@drawable/library_numberview1_text_selector"
+        custom:textSize="50sp" />
+
+</LinearLayout>

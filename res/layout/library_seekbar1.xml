@@ -19,9 +19,11 @@
         custom:thumb="@drawable/library_seekbar1_thumb_selector"
         custom:thumbHeight="40dp"
         custom:thumbOffset="20dp"
-        custom:thumbWidth="40dp" />
+        custom:thumbWidth="40dp" 
+        android:background="#ff0000"/>
 
     <com.swordy.library.android.widget.SeekBar
+        android:layout_marginTop="30dp"
         android:id="@+id/seekBar2"
         android:layout_width="200dp"
         android:layout_height="40dp"
@@ -32,6 +34,7 @@
         custom:progressDrawable="@drawable/library_seekbar1_progress"
         custom:progressHeight="4dp"
         custom:thumb="@drawable/library_seekbar1_thumb_selector"
-        custom:thumbOffset="20dp"/>
+        custom:thumbOffset="20dp"
+        android:background="#ff0000"/>
 
 </LinearLayout>

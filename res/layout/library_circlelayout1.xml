@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.swordy.library.android.widget.CircleLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:background="#333333"
+        android:padding="10dp"
+        custom:startAngle="30" >
+
+        <ImageButton
+            android:id="@+id/mirror_btnTVGame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/menu_game_selector"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/mirror_btnTVGyro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/menu_gyro_selector"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/mirror_btnTVVolume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/menu_volume_selector" />
+
+        <ImageButton
+            android:id="@+id/mirror_btnTVVoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/menu_voice_selector" />
+
+        <ImageButton
+            android:id="@+id/mirror_btnTVMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/menu_menu_selector" />
+
+        <ImageButton
+            android:id="@+id/mirror_btnTVHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/menu_home_selector" />
+    </com.swordy.library.android.widget.CircleLayout>
+
+</RelativeLayout>
