@@ -27,8 +27,8 @@ public class LevelListDrawable1 extends Activity
         mSpinner = (Spinner)findViewById(R.id.spinner1);
         mImgLevel = (ImageView)findViewById(R.id.imageView1);
         
-        String[] numbers = new String[10];
-        for(int i =0 ; i != 10; i++){
+        String[] numbers = new String[12];
+        for(int i =0 ; i != 12; i++){
             numbers[i] = ""+i;
         }
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, android.R.id.text1, numbers);
