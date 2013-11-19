@@ -11,7 +11,7 @@
         android:layout_height="70dp"
         android:background="@drawable/library_numberview1_bg_selector"
         custom:text="1"
-        custom:angle="20.0"
+        custom:angle="4dp"
         custom:textColor="@drawable/library_numberview1_text_selector"
         custom:textSize="50sp" />
 
