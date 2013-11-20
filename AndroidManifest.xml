@@ -209,6 +209,13 @@
                 <action android:name="com.swordy.demo.SIMPLE_CODE" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".library.widget.Switcher1"
+            android:label="Library/Widget/Switcher" >
+            <intent-filter>
+                <action android:name="com.swordy.demo.SIMPLE_CODE" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
