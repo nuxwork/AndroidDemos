@@ -3,6 +3,7 @@ package com.swordy.demo.android.task;
 import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.HandlerThread;
 import android.os.Looper;
 import android.os.Message;
 import android.util.Log;
@@ -39,14 +40,17 @@ public class Thread2 extends Activity
         setContentView(R.layout.thread1);
         
         mTextView = (TextView)findViewById(R.id.textView1);
-        new LooperThread().start();
+        
+        HandlerThread t = new HandlerThread("my");
+        t.start();
+        Handler h2 = new MyHandler(t.getLooper());
+        h2.sendEmptyMessage(0);
     }
     
     @Override
     protected void onResume()
     {
-        if (mState == STATE_PAUSED)
-            mState = STATE_STARTED;
+        mState = STATE_STARTED;
         super.onResume();
     }
     
@@ -80,44 +84,58 @@ public class Thread2 extends Activity
         }
     }
     
-    private Handler mHandler = new Handler()
+    private class MyHandler extends Handler
     {
+        
+        public MyHandler()
+        {
+            super();
+        }
+        public MyHandler(Looper l)
+        {
+            super(l);
+        }
         
         @Override
         public void handleMessage(Message msg)
         {
+            showThread();
             mTextView.setText("数字：" + mNumber);
         }
         
     };
     
-    private class LooperThread extends Thread
+    private MyHandler mMyHandler;
+    
+    private class LooperThread extends HandlerThread
     {
         
-        public LooperThread()
+        public LooperThread(String name)
         {
-            
+            super(name);
         }
         
         @Override
         public void run()
         {
-            Looper.prepare();
-            mToast = Toast.makeText(getApplicationContext(), "开始" + mNumber, 1);
-            mToast.show();
-
             while (mState != STATE_STOPED)
             {
+                Log.v(TAG, "running...");
                 if (mState == STATE_PAUSED)
+                {
+                    try
+                    {
+                        Thread.sleep(500);
+                    }
+                    catch (InterruptedException e)
+                    {
+                        e.printStackTrace();
+                    }
                     continue;
+                }
                 
                 mNumber++;
-                mHandler.sendEmptyMessage(0);
-                Looper.loop();
-                mToast.setText("数字" + mNumber);
-                Log.v(TAG, "log 数字 " + mNumber);
-                mToast.show();
-                
+                mMyHandler.sendEmptyMessage(0);
                 try
                 {
                     Thread.sleep(500);
@@ -127,8 +145,13 @@ public class Thread2 extends Activity
                     e.printStackTrace();
                 }
             }
-            mHandler.getLooper().quit();
         }
         
     };
+    
+    private void showThread()
+    {
+        Thread thr = Thread.currentThread();
+        Log.v(TAG, "" + thr.getName() + "  " + thr.getId() + "  " + thr.getState());
+    }
 }
