@@ -223,6 +223,13 @@
                 <action android:name="com.swordy.demo.SIMPLE_CODE" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".library.widget.CheckText1"
+            android:label="Library/Widget/CheckText" >
+            <intent-filter>
+                <action android:name="com.swordy.demo.SIMPLE_CODE" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
