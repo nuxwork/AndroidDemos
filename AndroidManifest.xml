@@ -154,6 +154,13 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".widget.ListPopupWindow1"
+            android:label="Widget/Window/ListPopupWindow(API-11)" >
+            <intent-filter>
+                <action android:name="com.swordy.demo.SIMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".data.SharedPreference1"
             android:label="Data/SharedPreference1" >
             <intent-filter>
