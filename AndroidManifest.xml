@@ -31,6 +31,13 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".app.Dialog2"
+            android:label="App/Dialog" >
+            <intent-filter>
+                <action android:name="com.swordy.demo.SIMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".app.Service1"
             android:label="App/Service" >
             <intent-filter>
@@ -44,6 +51,13 @@
         <activity
             android:name=".drawable.LevelListDrawable1"
             android:label="Drawable/LevelListDrawable" >
+            <intent-filter>
+                <action android:name="com.swordy.demo.SIMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.SurfaceView1"
+            android:label="View/SurfaceView" >
             <intent-filter>
                 <action android:name="com.swordy.demo.SIMPLE_CODE" />
             </intent-filter>
@@ -156,6 +170,13 @@
         <activity
             android:name=".widget.ListPopupWindow1"
             android:label="Widget/Window/ListPopupWindow(API-11)" >
+            <intent-filter>
+                <action android:name="com.swordy.demo.SIMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".widget.PopupWindow1"
+            android:label="Widget/Window/PopupWindow" >
             <intent-filter>
                 <action android:name="com.swordy.demo.SIMPLE_CODE" />
             </intent-filter>

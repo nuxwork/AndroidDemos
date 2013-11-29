@@ -4,27 +4,25 @@ import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.ArrayAdapter;
-import android.widget.ListPopupWindow;
+import android.widget.ListView;
+import android.widget.PopupWindow;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.swordy.demo.android.R;
 
-public class ListPopupWindow1 extends Activity implements OnClickListener
+public class PopupWindow1 extends Activity implements View.OnClickListener
 {
-    private static final String TAG = "AndroidDemos.ListPopupWindow1";
+    private static final String TAG = "AndroidDemos.PopupWindow1";
     
     private static final String[] NAMES = {"Google", "Microsoft", "Yahoo", "IBM"};
     
-    private ListPopupWindow mListPopupWindow;
+    private PopupWindow mPopupWindow;
     
     private View mAnchor;
     
     private TextView mText;
     
-    @SuppressLint("NewApi")
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -33,16 +31,17 @@ public class ListPopupWindow1 extends Activity implements OnClickListener
         
         mAnchor = findViewById(R.id.anchor1);
         mText = (TextView)findViewById(R.id.textView1);
-        mListPopupWindow = new ListPopupWindow(this);
+        mPopupWindow = new PopupWindow(this);
         
         ArrayAdapter<String> adapter =
             new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, android.R.id.text1, NAMES);
+        ListView list = new ListView(this);
+        list.setAdapter(adapter);
         
-        mListPopupWindow.setAdapter(adapter);
-        mListPopupWindow.setAnchorView(mAnchor);
-        mListPopupWindow.setWidth(100);
-        mListPopupWindow.setHeight(300);
-        mListPopupWindow.setAnimationStyle(R.style.PopupAnimation);
+        mPopupWindow.setContentView(list);
+        mPopupWindow.setWidth(100);
+        mPopupWindow.setHeight(300);
+        mPopupWindow.setAnimationStyle(R.style.PopupAnimation);
         
         findViewById(R.id.button1).setOnClickListener(this);
     }
@@ -51,16 +50,17 @@ public class ListPopupWindow1 extends Activity implements OnClickListener
     @Override
     public void onClick(View v)
     {
-        if (mListPopupWindow.isShowing())
+        if (mPopupWindow.isShowing())
         {
             mText.setText("dismiss");
-            mListPopupWindow.dismiss();
+            mPopupWindow.dismiss();
         }
         else
         {
             mText.setText("show");
-            mListPopupWindow.show();
+            mPopupWindow.showAsDropDown(mAnchor);
         }
         
     }
+    
 }
