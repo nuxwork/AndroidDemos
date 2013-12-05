@@ -217,6 +217,13 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".library.view.FlingDetector1"
+            android:label="Library/View/FlingDetector" >
+            <intent-filter>
+                <action android:name="com.swordy.demo.SIMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".library.widget.CircleLayout1"
             android:label="Library/Widget/CircleLayout" >
             <intent-filter>
@@ -247,6 +254,13 @@
         <activity
             android:name=".library.widget.CheckButton1"
             android:label="Library/Widget/CheckButton" >
+            <intent-filter>
+                <action android:name="com.swordy.demo.SIMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".library.widget.ListSelector1"
+            android:label="Library/Widget/ListSelector" >
             <intent-filter>
                 <action android:name="com.swordy.demo.SIMPLE_CODE" />
             </intent-filter>
