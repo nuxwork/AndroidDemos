@@ -37,28 +37,40 @@ public class FlingDetector1 extends Activity
     
     private OnFlingListener mFlingListener = new OnFlingListener()
     {
-        
+
         @Override
         public void onFling(int direction)
         {
             switch (direction)
             {
-                case FlingDetector.SINGLE_TAP:
-                    mTxvDeretion.setText("SINGLE_TAP");
-                    break;
-                case FlingDetector.FLING_UP:
+                case FlingDetector.DIRECTION_UP:
                     mTxvDeretion.setText("FLING_UP");
                     break;
-                case FlingDetector.FLING_DOWN:
+                case FlingDetector.DIRECTION_DOWN:
                     mTxvDeretion.setText("FLING_DOWN");
                     break;
-                case FlingDetector.FLING_LEFT:
+                case FlingDetector.DIRECTION_LEFT:
                     mTxvDeretion.setText("FLING_LEFT");
                     break;
-                case FlingDetector.FLING_RIGHT:
+                case FlingDetector.DIRECTION_RIGHT:
                     mTxvDeretion.setText("FLING_RIGHT");
                     break;
             }
         }
+
+        @Override
+        public void onShowPress(float x, float y)
+        {
+            mTxvDeretion.setText("onShowPress");
+        }
+
+        @Override
+        public void onSingleTap(float x, float y)
+        {
+            mTxvDeretion.setText("onSingleTap");
+            
+        }
+        
+
     };
 }
