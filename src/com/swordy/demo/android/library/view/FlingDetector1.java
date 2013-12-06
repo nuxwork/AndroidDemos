@@ -37,40 +37,55 @@ public class FlingDetector1 extends Activity
     
     private OnFlingListener mFlingListener = new OnFlingListener()
     {
-
+        
         @Override
-        public void onFling(int direction)
+        public boolean onDown(float x, float y)
         {
-            switch (direction)
-            {
-                case FlingDetector.DIRECTION_UP:
-                    mTxvDeretion.setText("FLING_UP");
-                    break;
-                case FlingDetector.DIRECTION_DOWN:
-                    mTxvDeretion.setText("FLING_DOWN");
-                    break;
-                case FlingDetector.DIRECTION_LEFT:
-                    mTxvDeretion.setText("FLING_LEFT");
-                    break;
-                case FlingDetector.DIRECTION_RIGHT:
-                    mTxvDeretion.setText("FLING_RIGHT");
-                    break;
-            }
-        }
-
-        @Override
-        public void onShowPress(float x, float y)
-        {
-            mTxvDeretion.setText("onShowPress");
-        }
-
-        @Override
-        public void onSingleTap(float x, float y)
-        {
-            mTxvDeretion.setText("onSingleTap");
-            
+            // TODO Auto-generated method stub
+            return false;
         }
         
-
+        @Override
+        public boolean onUp(float x, float y)
+        {
+            // TODO Auto-generated method stub
+            return false;
+        }
+        
+        @Override
+        public boolean onPress(float x, float y)
+        {
+            // TODO Auto-generated method stub
+            return false;
+        }
+        
+        @Override
+        public boolean onMove(float x, float y)
+        {
+            // TODO Auto-generated method stub
+            return false;
+        }
+        
+        @Override
+        public boolean onClick(float x, float y)
+        {
+            // TODO Auto-generated method stub
+            return false;
+        }
+        
+        @Override
+        public boolean onFling(int direction)
+        {
+            // TODO Auto-generated method stub
+            return false;
+        }
+        
+        @Override
+        public boolean onSerialFling(int direction)
+        {
+            // TODO Auto-generated method stub
+            return false;
+        }
+        
     };
 }
