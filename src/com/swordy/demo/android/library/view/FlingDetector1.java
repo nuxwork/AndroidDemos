@@ -39,52 +39,52 @@ public class FlingDetector1 extends Activity
     {
         
         @Override
-        public boolean onDown(float x, float y)
+        public void onDown(float x, float y)
         {
             // TODO Auto-generated method stub
-            return false;
+            return;
         }
         
         @Override
-        public boolean onUp(float x, float y)
+        public void onUp(float x, float y)
         {
             // TODO Auto-generated method stub
-            return false;
+            return;
         }
         
         @Override
-        public boolean onPress(float x, float y)
+        public void onPress(float x, float y)
         {
             // TODO Auto-generated method stub
-            return false;
+            return;
         }
         
         @Override
-        public boolean onMove(float x, float y)
+        public void onMove(float x, float y)
         {
             // TODO Auto-generated method stub
-            return false;
+            return;
         }
         
         @Override
-        public boolean onClick(float x, float y)
+        public void onClick(float x, float y)
         {
             // TODO Auto-generated method stub
-            return false;
+            return;
         }
         
         @Override
-        public boolean onFling(int direction)
+        public void onFling(int direction)
         {
             // TODO Auto-generated method stub
-            return false;
+            return;
         }
         
         @Override
-        public boolean onSerialFling(int direction)
+        public void onSerialFling(int direction)
         {
             // TODO Auto-generated method stub
-            return false;
+            return;
         }
         
     };
