@@ -3,6 +3,7 @@ package com.swordy.demo.android.library.view;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.MotionEvent;
+import android.view.View;
 import android.widget.TextView;
 
 import com.swordy.demo.android.R;
@@ -31,7 +32,7 @@ public class FlingDetector1 extends Activity
     @Override
     public boolean onTouchEvent(MotionEvent event)
     {
-        mFlingDetector.detect(event);
+        mFlingDetector.detect(null, event);
         return super.onTouchEvent(event);
     }
     
@@ -39,49 +40,49 @@ public class FlingDetector1 extends Activity
     {
         
         @Override
-        public void onDown(float x, float y)
+        public void onDown(View v, float x, float y)
         {
             // TODO Auto-generated method stub
             return;
         }
         
         @Override
-        public void onUp(float x, float y)
+        public void onUp(View v, float x, float y)
         {
             // TODO Auto-generated method stub
             return;
         }
         
         @Override
-        public void onPress(float x, float y)
+        public void onPress(View v, float x, float y)
         {
             // TODO Auto-generated method stub
             return;
         }
         
         @Override
-        public void onMove(float x, float y)
+        public void onMove(View v, float x, float y)
         {
             // TODO Auto-generated method stub
             return;
         }
         
         @Override
-        public void onClick(float x, float y)
+        public void onClick(View v, float x, float y)
         {
             // TODO Auto-generated method stub
             return;
         }
         
         @Override
-        public void onFling(int direction)
+        public void onFling(View v, int direction)
         {
             // TODO Auto-generated method stub
             return;
         }
         
         @Override
-        public void onSerialFling(int direction)
+        public void onSerialFling(View v, int direction)
         {
             // TODO Auto-generated method stub
             return;
