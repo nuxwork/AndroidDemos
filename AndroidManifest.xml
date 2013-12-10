@@ -56,6 +56,13 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".layout.Layout1"
+            android:label="Layout/Layout1" >
+            <intent-filter>
+                <action android:name="com.swordy.demo.SIMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".view.SurfaceView1"
             android:label="View/SurfaceView" >
             <intent-filter>
