@@ -24,6 +24,20 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".activity.RequestActivity1"
+            android:label="Activity/RequestActivity" >
+            <intent-filter>
+                <action android:name="com.swordy.demo.SIMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ResultActivity1"
+            android:label="Activity/ResultActivity" >
+            <intent-filter>
+                <action android:name="com.swordy.demo.SIMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".app.AlertDialog1"
             android:label="App/AlertDialog" >
             <intent-filter>
