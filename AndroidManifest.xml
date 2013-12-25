@@ -279,6 +279,13 @@
                 <action android:name="com.swordy.demo.SIMPLE_CODE" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".library.util.DrawableUtil1"
+            android:label="Library/Util/DrawableUtil" >
+            <intent-filter>
+                <action android:name="com.swordy.demo.SIMPLE_CODE" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
