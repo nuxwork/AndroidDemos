@@ -87,6 +87,13 @@ public class FlingDetector1 extends Activity
             // TODO Auto-generated method stub
             return;
         }
+
+        @Override
+        public void onTap(View v, float x, float y)
+        {
+            // TODO Auto-generated method stub
+            
+        }
         
     };
 }
