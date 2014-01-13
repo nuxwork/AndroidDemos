@@ -5,8 +5,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.View.OnTouchListener;
-import android.widget.ImageView;
+import android.widget.Button;
 
 import com.swordy.demo.android.R;
 import com.swordy.library.android.util.DrawableUtil;
@@ -15,6 +14,18 @@ public class DrawableUtil1 extends Activity
 {
     private static final String TAG = "AndroidDemos.DrawableUtil1";
     
+    private Button mBtn1;
+    
+    private Button mBtn2;
+    
+    private Button mBtn3;
+    
+    private boolean mIsLoad1;
+    
+    private boolean mIsLoad2;
+    
+    private boolean mIsLoad3;
+    
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -22,20 +33,55 @@ public class DrawableUtil1 extends Activity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.library_drawableutil1);
         
-        DrawableUtil.addDrawableTracker(0xfe01);
-        DrawableUtil.setCurrentTrackerId(0xfe01);
-        ImageView iv = (ImageView)findViewById(R.id.imageView1);
-        iv.setImageDrawable(DrawableUtil.getDrawable(getResources(), R.drawable.regiontouch1_keyboard_bg));
-        iv.setOnTouchListener(new OnTouchListener()
+        mBtn1 = (Button)findViewById(R.id.button1);
+        mBtn2 = (Button)findViewById(R.id.button2);
+        mBtn3 = (Button)findViewById(R.id.button3);
+    }
+    
+    public void onButtonClicked(View v)
+    {
+        int id = v.getId();
+        switch (id)
         {
+            case R.id.button1:
+                if (!mIsLoad1)
+                {
+                    mIsLoad1 = true;
+                    mBtn1.setBackgroundDrawable(DrawableUtil.getDrawable(this, R.drawable.number_1));
+                }
+                else
+                {
+                    DrawableUtil.recycle(this);
+                }
+                break;
+            case R.id.button2:
+                if (!mIsLoad2)
+                {
+                    mIsLoad2 = true;
+                    mBtn2.setBackgroundDrawable(DrawableUtil.getDrawable(this, R.drawable.number_2));
+                }
+                else
+                {
+                    DrawableUtil.recycle(this);
+                }
+                
+                break;
+            case R.id.button3:
+                if (!mIsLoad3)
+                {
+                    mIsLoad3 = true;
+                    mBtn3.setBackgroundDrawable(DrawableUtil.getDrawable(getApplicationContext(), R.drawable.number_2));
+                }
+                else
+                {
+                    DrawableUtil.recycle(getApplicationContext());
+                }
+                
+                break;
             
-            @Override
-            public boolean onTouch(View v, MotionEvent event)
-            {
-                Log.v(TAG, "view on touch");
-                return true;
-            }
-        });
+            default:
+                break;
+        }
     }
     
     @Override
@@ -78,7 +124,7 @@ public class DrawableUtil1 extends Activity
     protected void onDestroy()
     {
         Log.v(TAG, "onDestroy");
-        DrawableUtil.recycle(0xfe01);
+        DrawableUtil.recycleAll();
         super.onDestroy();
     }
     

@@ -14,7 +14,7 @@ import com.swordy.library.android.widget.RegionButton.OnRegionTouchListener;
 
 public class RegionButton1 extends Activity
 {
-    public static final String TAG = RegionButton1.class.getSimpleName();
+    public static final String TAG = "AndroidDemos.RegionButton1";
     
     private static final int COLOR_DIRETION_OK = 0xFFFF0000;
     
@@ -26,14 +26,16 @@ public class RegionButton1 extends Activity
     
     private static final int COLOR_DIRETION_RIGHT = 0xFF00FFFF;
     
+    RegionButton rb;
+    
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.library_regionbutton1);
         
-        RegionButton rb = (RegionButton)findViewById(R.id.regionButton1);
-        rb.setBackgroundDrawable(DrawableUtil.getDrawable(getResources(), R.drawable.regiontouch1_keyboard_bg));
+        rb = (RegionButton)findViewById(R.id.regionButton1);
+        rb.setBackgroundDrawable(DrawableUtil.getDrawable(this, R.drawable.regiontouch1_keyboard_bg));
         rb.setRegionMap(R.drawable.regiontouch1_keyboard_region, new int[] {COLOR_DIRETION_OK, COLOR_DIRETION_UP,
             COLOR_DIRETION_DOWN, COLOR_DIRETION_LEFT, COLOR_DIRETION_RIGHT}, new int[] {
             R.drawable.regiontouch1_keyboard_ok_pressed, R.drawable.regiontouch1_keyboard_up_pressed,
@@ -72,4 +74,13 @@ public class RegionButton1 extends Activity
         });
         
     }
+
+    @Override
+    protected void onDestroy()
+    {
+        DrawableUtil.recycle(this);
+        super.onDestroy();
+    }
+    
+    
 }
