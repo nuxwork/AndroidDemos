@@ -7,6 +7,8 @@
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="17" />
+    
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
     <application
         android:name=".app.ThisApplication"
@@ -65,6 +67,13 @@
         <activity
             android:name=".drawable.LevelListDrawable1"
             android:label="Drawable/LevelListDrawable" >
+            <intent-filter>
+                <action android:name="com.swordy.demo.SIMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".io.Assets1"
+            android:label="IO/Assets" >
             <intent-filter>
                 <action android:name="com.swordy.demo.SIMPLE_CODE" />
             </intent-filter>
@@ -231,7 +240,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.swordy.demo.android.library.widget.SeekBar1"
+            android:name=".library.widget.SeekBar1"
             android:label="Library/Widget/SeekBar" >
             <intent-filter>
                 <action android:name="com.swordy.demo.SIMPLE_CODE" />
