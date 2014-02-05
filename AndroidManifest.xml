@@ -7,8 +7,8 @@
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="17" />
-    
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:name=".app.ThisApplication"
@@ -64,6 +64,13 @@
         <service android:name=".app.Service1$MyService1" >
         </service>
 
+        <activity
+            android:name=".fragment.Fragment1"
+            android:label="Fragment/Fragment1" >
+            <intent-filter>
+                <action android:name="com.swordy.demo.SIMPLE_CODE" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".drawable.LevelListDrawable1"
             android:label="Drawable/LevelListDrawable" >
