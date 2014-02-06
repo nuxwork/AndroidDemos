@@ -5,12 +5,11 @@ import java.util.Random;
 import android.app.ActionBar;
 import android.app.ActionBar.Tab;
 import android.app.ActionBar.TabListener;
-import android.app.Activity;
-import android.app.Fragment;
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
 import android.os.Bundle;
-import android.support.v13.app.FragmentPagerAdapter;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.view.LayoutInflater;
@@ -28,7 +27,7 @@ import com.swordy.demo.android.R;
  * @since Jan 20, 2014
  * @version 1.0
  */
-public class SlideTabs2 extends Activity
+public class SlideTabs2 extends FragmentActivity
 {
 	private static final String TAG = "AndroidDemos.SlideTabs2";
 
@@ -48,7 +47,7 @@ public class SlideTabs2 extends Activity
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.fragment_viewpager1);
 		mViewPager = (ViewPager) findViewById(R.id.viewPager1);
-		mPagerAdapter = new MyPagerAdapter(getFragmentManager());
+		mPagerAdapter = new MyPagerAdapter(getSupportFragmentManager());
 		mViewPager.setAdapter(mPagerAdapter);
 		mViewPager.setOnPageChangeListener(mPageChangeListener);
 
@@ -89,13 +88,7 @@ public class SlideTabs2 extends Activity
 	private TabListener mTabListener = new TabListener() {
 
 		@Override
-		public void onTabUnselected(Tab tab, FragmentTransaction ft)
-		{
-
-		}
-
-		@Override
-		public void onTabSelected(Tab tab, FragmentTransaction ft)
+		public void onTabSelected(Tab tab, android.app.FragmentTransaction ft)
 		{
 			if (tab == mTabs[0])
 			{
@@ -107,12 +100,21 @@ public class SlideTabs2 extends Activity
 			{
 				mViewPager.setCurrentItem(2);
 			}
+			
 		}
 
 		@Override
-		public void onTabReselected(Tab tab, FragmentTransaction ft)
+		public void onTabUnselected(Tab tab, android.app.FragmentTransaction ft)
 		{
+			// TODO Auto-generated method stub
+			
+		}
 
+		@Override
+		public void onTabReselected(Tab tab, android.app.FragmentTransaction ft)
+		{
+			// TODO Auto-generated method stub
+			
 		}
 	};
 
