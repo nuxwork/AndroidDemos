@@ -61,7 +61,7 @@ public class SlideTabs1 extends FragmentActivity
 				.setContent(R.id.viewPager1));
 		mTabHost.addTab(mTabHost.newTabSpec("three").setIndicator("three-3")
 				.setContent(R.id.viewPager1));
-
+		
 		TabWidget tabWidget = mTabHost.getTabWidget();
 		int count = tabWidget.getChildCount();
 		for (int i = 0; i != count; i++)
@@ -120,7 +120,6 @@ public class SlideTabs1 extends FragmentActivity
 		@Override
 		public Fragment getItem(int position)
 		{
-			ELog.i(TAG, "@--> getItem by position" + position);
 			ELog.i(TAG, "@--> getItem by position" + position);
 			return MyFragment.create(addresses[position]);
 		}

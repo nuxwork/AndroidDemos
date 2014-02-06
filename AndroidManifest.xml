@@ -100,6 +100,13 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".fragment.SlideTabs3"
+            android:label="Fragment/SlideTabs3" >
+            <intent-filter>
+                <action android:name="com.swordy.demo.SIMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".drawable.LevelListDrawable1"
             android:label="Drawable/LevelListDrawable" >
             <intent-filter>

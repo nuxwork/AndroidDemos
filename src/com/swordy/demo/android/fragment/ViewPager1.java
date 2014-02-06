@@ -81,16 +81,15 @@ public class ViewPager1 extends FragmentActivity
 				Bundle savedInstanceState)
 		{
 			Random r = new Random(System.currentTimeMillis());
-			int color = r.nextInt();
 
 			Bundle b = getArguments();
 
 			View v = inflater.inflate(R.layout.fragment_viewpager1_layout1, null);
-			v.setBackgroundColor(color);
+			v.setBackgroundColor(r.nextInt() >> 8 | 0xFF << 24);
 
 			TextView txvAddress = (TextView) v.findViewById(R.id.textView1);
-			txvAddress.setTextColor(color + 0x00440044);
-			txvAddress.setBackgroundColor(color + 0x00444400);
+			txvAddress.setTextColor(r.nextInt() >> 8 | 0xFF << 24);
+			txvAddress.setBackgroundColor(r.nextInt() >> 8 | 0xFF << 24);
 
 			txvAddress.setText(b.getString("address", ""));
 			return v;
