@@ -86,6 +86,13 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".fragment.SlideTabs1"
+            android:label="Fragment/SlideTabs" >
+            <intent-filter>
+                <action android:name="com.swordy.demo.SIMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".drawable.LevelListDrawable1"
             android:label="Drawable/LevelListDrawable" >
             <intent-filter>
