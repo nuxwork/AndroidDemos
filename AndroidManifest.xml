@@ -72,6 +72,13 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".fragment.ViewPager1"
+            android:label="Fragment/ViewPager" >
+            <intent-filter>
+                <action android:name="com.swordy.demo.SIMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".drawable.LevelListDrawable1"
             android:label="Drawable/LevelListDrawable" >
             <intent-filter>
