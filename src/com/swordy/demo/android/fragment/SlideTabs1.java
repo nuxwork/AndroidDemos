@@ -23,6 +23,9 @@ import com.swordy.demo.android.R;
 import com.swordy.library.android.util.ELog;
 
 /**
+ * 1. 使用TabHost和ViewPager组合实现一个可以滑动的tab
+ * 2. bug：如果当前页为0，则ViewPager第一次不加载。
+ * 
  * @author swordy
  * @email mryangjian@live.com
  * @since Jan 20, 2014
@@ -118,6 +121,7 @@ public class SlideTabs1 extends FragmentActivity
 		public Fragment getItem(int position)
 		{
 			ELog.i(TAG, "@--> getItem by position" + position);
+			ELog.i(TAG, "@--> getItem by position" + position);
 			return MyFragment.create(addresses[position]);
 		}
 
@@ -133,6 +137,7 @@ public class SlideTabs1 extends FragmentActivity
 	{
 		public static MyFragment create(String address)
 		{
+			ELog.i(TAG, "@--> MyFragment.create()");
 			MyFragment f = new MyFragment();
 			Bundle b = new Bundle();
 			b.putString("address", address);

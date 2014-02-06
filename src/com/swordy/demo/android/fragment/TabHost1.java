@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.swordy.demo.android.R;
+import com.swordy.library.android.util.ELog;
 
 /**
  * @author swordy
@@ -52,6 +53,7 @@ public class TabHost1 extends FragmentActivity
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState)
 		{
+			ELog.i(TAG, "@--> onCreateView");
 			return super.onCreateView(inflater, container, savedInstanceState);
 		}
 

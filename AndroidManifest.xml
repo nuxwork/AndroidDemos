@@ -87,7 +87,14 @@
         </activity>
         <activity
             android:name=".fragment.SlideTabs1"
-            android:label="Fragment/SlideTabs" >
+            android:label="Fragment/SlideTabs1" >
+            <intent-filter>
+                <action android:name="com.swordy.demo.SIMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".fragment.SlideTabs2"
+            android:label="Fragment/SlideTabs2" >
             <intent-filter>
                 <action android:name="com.swordy.demo.SIMPLE_CODE" />
             </intent-filter>
