@@ -79,6 +79,13 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".fragment.TabHost1"
+            android:label="Fragment/TabHost" >
+            <intent-filter>
+                <action android:name="com.swordy.demo.SIMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".drawable.LevelListDrawable1"
             android:label="Drawable/LevelListDrawable" >
             <intent-filter>
