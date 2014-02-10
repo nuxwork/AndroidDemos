@@ -9,6 +9,7 @@
         android:targetSdkVersion="17" />
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
     <application
         android:name=".app.ThisApplication"
@@ -284,6 +285,13 @@
         <activity
             android:name=".task.Thread2"
             android:label="Task/LooperThread" >
+            <intent-filter>
+                <action android:name="com.swordy.demo.SIMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".device.Wifilist1"
+            android:label="Device/Wifi/List" >
             <intent-filter>
                 <action android:name="com.swordy.demo.SIMPLE_CODE" />
             </intent-filter>

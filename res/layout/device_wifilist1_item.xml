@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:background="#999999"
+    android:paddingTop="3dp"
+    android:paddingBottom="3dp">
+
+    <TableRow style="@style/device_wifilist_item_row" >
+
+        <TextView
+            style="@style/device_wifilist_item_name"
+            android:text="SSID" />
+
+        <TextView
+            android:id="@+id/SSID"
+            style="@style/device_wifilist_item_value"
+            android:text="565465465654" 
+            android:textColor="#aa2222"/>
+    </TableRow>
+
+    <TableRow style="@style/device_wifilist_item_row" >
+
+        <TextView
+            style="@style/device_wifilist_item_name"
+            android:text="BSSID" />
+
+        <TextView
+            android:id="@+id/BSSID"
+            style="@style/device_wifilist_item_value"
+            android:text="565465465654" />
+    </TableRow>
+
+    <TableRow style="@style/device_wifilist_item_row" >
+
+        <TextView
+            style="@style/device_wifilist_item_name"
+            android:text="capabilities" />
+
+        <TextView
+            android:id="@+id/capabilities"
+            style="@style/device_wifilist_item_value"
+            android:text="565465465654" />
+    </TableRow>
+
+    <TableRow style="@style/device_wifilist_item_row" >
+
+        <TextView
+            style="@style/device_wifilist_item_name"
+            android:text="frequency" />
+
+        <TextView
+            android:id="@+id/frequency"
+            style="@style/device_wifilist_item_value"
+            android:text="565465465654" />
+    </TableRow>
+
+    <TableRow style="@style/device_wifilist_item_row" >
+
+        <TextView
+            style="@style/device_wifilist_item_name"
+            android:text="level" />
+
+        <TextView
+            android:id="@+id/level"
+            style="@style/device_wifilist_item_value"
+            android:text="565465465654" />
+    </TableRow>
+
+</TableLayout>
