@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="red">#ff0000</color>
+    <color name="green">#00ff00</color>
+    <color name="blue">#0000ff</color>
+    
+    
     <color name="library_numberview1_bg_normal">#ff212228</color>
     <color name="library_numberview1_bg_pressed">#ff2d7dfa</color>
     <color name="library_numberview1_text_normal">#ff9b9fa5</color>

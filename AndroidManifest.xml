@@ -297,6 +297,13 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".library.app.SlideTabActivity1"
+            android:label="Library/App/SlideTabActivity" >
+            <intent-filter>
+                <action android:name="com.swordy.demo.SIMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".library.widget.SeekBar1"
             android:label="Library/Widget/SeekBar" >
             <intent-filter>
