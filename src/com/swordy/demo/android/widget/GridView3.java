@@ -117,14 +117,12 @@ public class GridView3 extends Activity {
 			// if(bitmap == null)
 			// notifyDataSetChanged();
 			Bitmap bitmap = mBitmaps[position % mCacheSize];
-			holder.previewData = bitmap;
-			holder.preview.setImageBitmap(holder.previewData);
+			holder.preview.setImageBitmap(bitmap);
 			return convertView;
 		}
 
 		private class ViewHolder {
 			public ImageView preview;
-			public Bitmap previewData;
 		}
 
 		private class ImageLoader implements Runnable {
