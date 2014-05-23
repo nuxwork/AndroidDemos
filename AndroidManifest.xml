@@ -10,6 +10,7 @@
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <!-- 记住这个一要放在application外面，不然会出现配置错误 信息 -->
     <instrumentation
@@ -272,6 +273,13 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".widget.SlideTabPager1"
+            android:label="Widget/SlideTabPager" >
+            <intent-filter>
+                <action android:name="com.swordy.demo.SIMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".data.SharedPreference1"
             android:label="Data/SharedPreference1" >
             <intent-filter>
@@ -386,6 +394,13 @@
         <activity
             android:name=".library.libs.image.BlurImage1"
             android:label="Library/Libs/Image/BlurImage" >
+            <intent-filter>
+                <action android:name="com.swordy.demo.SIMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".library3.VolleyTest1"
+            android:label="Library3/VolleyTest" >
             <intent-filter>
                 <action android:name="com.swordy.demo.SIMPLE_CODE" />
             </intent-filter>
